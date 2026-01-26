@@ -25,10 +25,10 @@ Blog de tecnología, inteligencia artificial y desarrollo profesional donde comp
 url: "https://lahechiceracodigo.github.io"
 
 github:
-  username: 'LaHechiceraCodigo' # change to your GitHub username
+  username: LaHechiceraCodigo # change to your GitHub username
 
 twitter:
-  username: 'MentesDesc' # change to your Twitter username
+  username: MentesDesc # change to your Twitter username
 
 social:
   # Change to your full name.
