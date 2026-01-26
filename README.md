@@ -1,4 +1,5 @@
-# Chirpy Starter
+# La Hechicera del Código
+<img width="500" height="500" alt="Gemini_Generated_Image_2543hw2543hw2543-removebg-preview" src="https://github.com/user-attachments/assets/0170de96-35bf-4c56-bc1a-d68485739ece" />
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
