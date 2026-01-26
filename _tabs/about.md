@@ -1,8 +1,10 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+layout: page
+title: About
+permalink: /about/
 ---
+
+¡Hola! Soy La Hechicera del Código. Bienvenida a mi rincón de magia tech.
 
 # Manifesto — La Hechicera del Código
 
