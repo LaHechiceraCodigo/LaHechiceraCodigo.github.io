@@ -9,6 +9,8 @@ image:
   alt: "Imagen de bienvenida al aquelarre tecnológico" # Texto alternativo para la imagen
 description: "Este no es un blog más de tecnología. Es un espacio para aprender bien, sin ruido y con enfoque profesional."
 ---
+<img width="1024" height="1536" alt="bienvenidos-aquelarre png" src="https://github.com/user-attachments/assets/d22b531b-db2e-4678-8785-5fc37bd07b04" />
+
 **Este no es un blog más de tecnología.**
 
 Es un espacio para aprender **bien**, sin ruido, sin promesas falsas y con enfoque profesional.
