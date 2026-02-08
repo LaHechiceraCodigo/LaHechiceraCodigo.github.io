@@ -1,6 +1,6 @@
 ---
 title: Mi camino hacia el mundo Tech
-date: 2024-05-20 14:00:00 +0800
+date: 2026-01-22 14:00:00 +0800
 categories: [Carrera, Introducción]
 tags: [aprendizaje, primer-post]
 description: Aquí cuento por qué decidí convertirme en la Hechicera del Código.
