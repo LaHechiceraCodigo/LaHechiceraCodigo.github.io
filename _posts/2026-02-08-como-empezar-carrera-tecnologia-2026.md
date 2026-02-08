@@ -1,7 +1,7 @@
 <img width="1024" height="1536" alt="ChatGPT Image 8 feb 2026, 08_16_46 a m" src="https://github.com/user-attachments/assets/01c9d0f6-5186-43bc-82c8-3730b18d17c0" />---
 layout: post
 title: "Cómo iniciar una carrera en tecnología: guía realista para el mercado actual"
-date: 2026-08-02 8:00:00 -0500
+date: 2026-02-08 8:00:00 -0500
 categories: [Carrera Tech, tecnología]
 tags: [carrera en tecnología, trabajar en tecnología, inteligencia artificial, habilidades tecnológicas, programación, reclutadores tech, IA y desarrollo]
 type: BlogPosting
