@@ -22,7 +22,6 @@ keywords:
   - inteligencia artificial
   - habilidades para desarrolladores
   - empleos tecnológicos
-image: /assets/img/carrera-tecnologia-2026.jpg
 description: "Descubre cómo empezar una carrera en tecnología en 2026, las habilidades más demandadas, IA, lenguajes clave y consejos reales para conseguir empleo."
 ---
 
