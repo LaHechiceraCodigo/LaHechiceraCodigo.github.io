@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+<img width="1024" height="1536" alt="about-me" src="https://github.com/user-attachments/assets/3993c8ae-cfad-43a0-8352-bf41ea6f89c5" />
 
 ¡Hola! Soy La Hechicera del Código. Bienvenida a mi rincón de magia tech.
 
