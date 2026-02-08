@@ -64,5 +64,4 @@ Aquí no se sigue el futuro.
 Aquí se diseña.
  
 **Un espacio para construir, optimizar e innovar con propósito.**
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+
