@@ -44,7 +44,8 @@ Python es el lenguaje más utilizado en IA por su simplicidad y potencia.
 6. **Portafolio profesional**
 
    
-![ruta_para_aprender_inteligencia_artificial](https://github.com/user-attachments/assets/ddc641fc-85f6-4cb8-94a6-f377b9946069)
+![ruta_para_aprender_ia](https://github.com/user-attachments/assets/6cb4862e-1e07-4b6b-adc8-79b068568acc)
+
 
 **4.Dónde aprender Inteligencia Artificial (aparte de la Hechicera del código)
 
