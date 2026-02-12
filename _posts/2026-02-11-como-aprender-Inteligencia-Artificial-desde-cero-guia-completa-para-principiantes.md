@@ -4,7 +4,7 @@ title: "CÓMO APRENDER INTELIGENCIA ARTIFICIAL DESDE CERO: GUÍA COMPLETA PARA P
 date: 2026-02-11 17:00:00 -0500
 categories: [Inteligencia Artificial, tecnología]
 tags: [IA, Guía, Lógica de programación]
-description: "Escribe aquí un resumen de dos líneas. Esto es lo que Google mostrará en los resultados de búsqueda."
+description: "Aprende Inteligencia Artificial desde cero con esta guía completa para principiantes. Descubre qué estudiar, cómo usar Python, qué herramientas dominar y dónde encontrar cursos gratuitos como Microsoft Learn, Coursera y Kaggle para comenzar tu camino en Machine Learning y Deep Learning."
 ---
 
 #CÓMO APRENDER INTELIGENCIA ARTIFICIAL DESDE CERO: GUÍA COMPLETA PARA PRINCIPIANTES
