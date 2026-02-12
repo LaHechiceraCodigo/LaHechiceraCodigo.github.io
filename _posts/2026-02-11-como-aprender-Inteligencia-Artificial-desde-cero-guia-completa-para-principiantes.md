@@ -7,7 +7,7 @@ tags: [IA, Guía, Lógica de programación]
 description: "Escribe aquí un resumen de dos líneas. Esto es lo que Google mostrará en los resultados de búsqueda."
 ---
 
-##CÓMO APRENDER INTELIGENCIA ARTIFICIAL DESDE CERO: GUÍA COMPLETA PARA PRINCIPIANTES
+#CÓMO APRENDER INTELIGENCIA ARTIFICIAL DESDE CERO: GUÍA COMPLETA PARA PRINCIPIANTES
 
 La Inteligencia Artificial (IA) ya no es solo cosa de grandes empresas o científicos. Hoy cualquier persona con una computadora puede aprenderla desde cero y construir proyectos realies. 
 En este artículo te explico ** qué aprender, dónde aprenderlo y qué herramientas usar,** incluso si no tienes experiencia previa.
