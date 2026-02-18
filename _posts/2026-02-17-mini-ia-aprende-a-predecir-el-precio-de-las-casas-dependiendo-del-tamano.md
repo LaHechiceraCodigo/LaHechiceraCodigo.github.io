@@ -39,13 +39,13 @@ He desarrollado un modelo de Regresión Lineal, que es básicamente el "Hechizo 
 
 La lógica matemática detrás de nuestro modelo sigue la fórmula:
 
-            $$y = mx + b$$
+            y = mx + b
 
 Donde:
-- $y$ es el precio que queremos predecir.
-- $x$ es el tamaño de la casa.
-- $m$ es la pendiente (qué tanto afecta el tamaño al precio).
-- $b$ es el intercepto (el precio base).
+- y es el precio que queremos predecir.
+- x es el tamaño de la casa.
+- m es la pendiente (qué tanto afecta el tamaño al precio).
+- b es el intercepto (el precio base).
 
 🛠️ Los Ingredientes (Stack Tecnológico)
 
