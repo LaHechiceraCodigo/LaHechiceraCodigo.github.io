@@ -4,13 +4,11 @@ title: "Las Madres del Conjuro: De Ada Lovelace a Margaret Hamilton"
 date: 2026-03-11 08:51:00 -0500
 categories: [Tecnología, Historia]
 tags: [mujeres en la tecnología, historia de la tecnología, womentech, software engineering]
-image:
-  path: /assets/img/blog/madres-conjuro-tech.webp
-  alt: "Retrato conceptual que une a Ada Lovelace y Margaret Hamilton con líneas de código y elementos de alquimia digital."
+
 description: "Un recorrido histórico y técnico por las mujeres pioneras que forjaron la computación, desde el primer algoritmo hasta la ingeniería de software moderna."
 ---
 <img width="2304" height="1728" alt="Cartel Horizontal Taller de Astronomía Infantil Rosa" src="https://github.com/user-attachments/assets/0a421fa5-ee51-4300-b109-9c18d4e6e033" />
-
+ alt: "Retrato conceptual que une a Ada Lovelace y Margaret Hamilton con líneas de código y elementos de alquimia digital."
 ## El Arte de Programar: Un Legado  y Máquinas
 
 La programación moderna no nació en los laboratorios estériles de silicio de la década de los 70; nació en los márgenes de la historia victoriana y en el fragor de guerras mundiales. Nació en la imaginación de quienes vieron en los engranajes y los cables algo más que metal frío: vieron una forma de **lenguaje universal**.
