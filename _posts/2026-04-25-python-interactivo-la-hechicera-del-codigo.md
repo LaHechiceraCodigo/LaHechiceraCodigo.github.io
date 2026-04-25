@@ -13,9 +13,13 @@ Aquí va tu texto normal...
 <div id="mindmap-app">
   </div>
 
+{% raw %}
 <script>
   /* Todo el JavaScript */
 </script>
+
+{% endraw %}
+
 {% endraw %}
 <style>
   /* Reseteo encapsulado solo para este componente */
