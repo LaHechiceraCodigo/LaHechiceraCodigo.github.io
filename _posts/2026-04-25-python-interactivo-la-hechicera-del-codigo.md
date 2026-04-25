@@ -1,45 +1,45 @@
-[python_mindmap_space_bg.html](https://github.com/user-attachments/files/27087890/python_mindmap_space_bg.html)
-
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  .app { min-height: 640px; position: relative; border-radius: 12px; overflow: hidden; font-family: var(--font-sans); }
-  canvas#space { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 12px; }
-  .content { position: relative; z-index: 2; }
-  .header { text-align: center; padding: 28px 20px 12px; }
-  .header h1 { font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #4fc8d4; text-transform: uppercase; }
-  .header p { font-size: 22px; font-weight: 500; color: #e8f4f8; margin-top: 4px; }
-  .diagram-area { position: relative; width: 100%; height: 420px; }
-  svg.connections { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
-  .center-node { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle, #1a3a6e 0%, #0d1f45 100%); border: 2px solid #4fc8d4; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0 0 24px rgba(79,200,212,0.35); transition: box-shadow 0.3s; }
-  .center-node:hover { box-shadow: 0 0 36px rgba(79,200,212,0.6); }
-  .center-node span { font-size: 15px; font-weight: 500; color: #7de8f0; letter-spacing: 0.12em; }
-  .center-node small { font-size: 9px; color: #4fc8d4; letter-spacing: 0.08em; margin-top: 2px; }
-  .orbit-node { position: absolute; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle, #1a4060 0%, #0d2035 100%); border: 1.5px solid #2a8aaa; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; z-index: 5; }
-  .orbit-node:hover { transform: scale(1.15); border-color: #4fc8d4; box-shadow: 0 0 18px rgba(79,200,212,0.5); }
-  .orbit-node .icon { font-size: 18px; }
-  .orbit-node .label { font-size: 8px; color: #4fc8d4; text-align: center; margin-top: 3px; letter-spacing: 0.04em; line-height: 1.2; max-width: 60px; }
-  .modal-overlay { display: none; position: absolute; inset: 0; background: rgba(5,8,25,0.88); z-index: 50; align-items: center; justify-content: center; border-radius: 12px; }
-  .modal-overlay.open { display: flex; }
-  .modal { background: linear-gradient(145deg, #0e1a3d, #081228); border: 1.5px solid #4fc8d4; border-radius: 12px; padding: 28px; max-width: 460px; width: 90%; position: relative; }
-  .modal-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: #4fc8d4; font-size: 20px; cursor: pointer; }
-  .modal-icon { font-size: 36px; text-align: center; margin-bottom: 8px; }
-  .modal-title { font-size: 16px; font-weight: 500; color: #7de8f0; text-align: center; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
-  .modal-subtitle { font-size: 11px; color: #4fc8d4; text-align: center; letter-spacing: 0.08em; margin-bottom: 16px; }
-  .modal-divider { border: none; border-top: 0.5px solid #2a5a7a; margin: 12px 0; }
-  .modal-body { font-size: 13px; color: #c0dde8; line-height: 1.7; }
-  .modal-tag { display: inline-block; background: rgba(79,200,212,0.12); border: 0.5px solid #4fc8d4; color: #7de8f0; border-radius: 20px; font-size: 10px; padding: 3px 10px; margin: 4px 3px 0; letter-spacing: 0.05em; }
-  .permite-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
-  .permite-card { background: rgba(79,200,212,0.06); border: 0.5px solid #2a5a7a; border-radius: 8px; padding: 12px 10px; text-align: center; cursor: pointer; transition: border-color 0.2s; }
-  .permite-card:hover { border-color: #4fc8d4; }
-  .permite-card .p-icon { font-size: 22px; margin-bottom: 5px; }
-  .permite-card .p-title { font-size: 10px; color: #7de8f0; letter-spacing: 0.05em; font-weight: 500; }
-  .footer-hint { text-align: center; padding: 0 20px 20px; }
-  .footer-hint p { font-size: 11px; color: #4fc8d4; letter-spacing: 0.08em; }
-  .footer-hint button { margin-top: 10px; background: rgba(79,200,212,0.1); border: 1px solid #4fc8d4; color: #7de8f0; border-radius: 20px; padding: 7px 20px; font-size: 11px; cursor: pointer; letter-spacing: 0.08em; transition: background 0.2s; }
-  .footer-hint button:hover { background: rgba(79,200,212,0.2); }
+  /* Reseteo encapsulado solo para este componente */
+  #mindmap-app, #mindmap-app * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  #mindmap-app { min-height: 640px; position: relative; border-radius: 12px; overflow: hidden; font-family: sans-serif; background-color: #080c1f; }
+  #mindmap-app canvas#space { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 12px; }
+  #mindmap-app .content { position: relative; z-index: 2; }
+  #mindmap-app .header { text-align: center; padding: 28px 20px 12px; }
+  #mindmap-app .header h1 { font-size: 13px; font-weight: 500; letter-spacing: 0.2em; color: #4fc8d4; text-transform: uppercase; }
+  #mindmap-app .header p { font-size: 22px; font-weight: 500; color: #e8f4f8; margin-top: 4px; }
+  #mindmap-app .diagram-area { position: relative; width: 100%; height: 420px; }
+  #mindmap-app svg.connections { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+  #mindmap-app .center-node { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle, #1a3a6e 0%, #0d1f45 100%); border: 2px solid #4fc8d4; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; z-index: 10; box-shadow: 0 0 24px rgba(79,200,212,0.35); transition: box-shadow 0.3s; }
+  #mindmap-app .center-node:hover { box-shadow: 0 0 36px rgba(79,200,212,0.6); }
+  #mindmap-app .center-node span { font-size: 15px; font-weight: 500; color: #7de8f0; letter-spacing: 0.12em; }
+  #mindmap-app .center-node small { font-size: 9px; color: #4fc8d4; letter-spacing: 0.08em; margin-top: 2px; }
+  #mindmap-app .orbit-node { position: absolute; width: 68px; height: 68px; border-radius: 50%; background: radial-gradient(circle, #1a4060 0%, #0d2035 100%); border: 1.5px solid #2a8aaa; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; z-index: 5; }
+  #mindmap-app .orbit-node:hover { transform: scale(1.15); border-color: #4fc8d4; box-shadow: 0 0 18px rgba(79,200,212,0.5); }
+  #mindmap-app .orbit-node .icon { font-size: 18px; }
+  #mindmap-app .orbit-node .label { font-size: 8px; color: #4fc8d4; text-align: center; margin-top: 3px; letter-spacing: 0.04em; line-height: 1.2; max-width: 60px; }
+  #mindmap-app .modal-overlay { display: none; position: absolute; inset: 0; background: rgba(5,8,25,0.88); z-index: 50; align-items: center; justify-content: center; border-radius: 12px; }
+  #mindmap-app .modal-overlay.open { display: flex; }
+  #mindmap-app .modal { background: linear-gradient(145deg, #0e1a3d, #081228); border: 1.5px solid #4fc8d4; border-radius: 12px; padding: 28px; max-width: 460px; width: 90%; position: relative; }
+  #mindmap-app .modal-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: #4fc8d4; font-size: 20px; cursor: pointer; }
+  #mindmap-app .modal-icon { font-size: 36px; text-align: center; margin-bottom: 8px; }
+  #mindmap-app .modal-title { font-size: 16px; font-weight: 500; color: #7de8f0; text-align: center; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+  #mindmap-app .modal-subtitle { font-size: 11px; color: #4fc8d4; text-align: center; letter-spacing: 0.08em; margin-bottom: 16px; }
+  #mindmap-app .modal-divider { border: none; border-top: 0.5px solid #2a5a7a; margin: 12px 0; }
+  #mindmap-app .modal-body { font-size: 13px; color: #c0dde8; line-height: 1.7; }
+  #mindmap-app .modal-tag { display: inline-block; background: rgba(79,200,212,0.12); border: 0.5px solid #4fc8d4; color: #7de8f0; border-radius: 20px; font-size: 10px; padding: 3px 10px; margin: 4px 3px 0; letter-spacing: 0.05em; }
+  #mindmap-app .permite-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  #mindmap-app .permite-card { background: rgba(79,200,212,0.06); border: 0.5px solid #2a5a7a; border-radius: 8px; padding: 12px 10px; text-align: center; cursor: pointer; transition: border-color 0.2s; }
+  #mindmap-app .permite-card:hover { border-color: #4fc8d4; }
+  #mindmap-app .permite-card .p-icon { font-size: 22px; margin-bottom: 5px; }
+  #mindmap-app .permite-card .p-title { font-size: 10px; color: #7de8f0; letter-spacing: 0.05em; font-weight: 500; }
+  #mindmap-app .footer-hint { text-align: center; padding: 0 20px 20px; }
+  #mindmap-app .footer-hint p { font-size: 11px; color: #4fc8d4; letter-spacing: 0.08em; }
+  #mindmap-app .footer-hint button { margin-top: 10px; background: rgba(79,200,212,0.1); border: 1px solid #4fc8d4; color: #7de8f0; border-radius: 20px; padding: 7px 20px; font-size: 11px; cursor: pointer; letter-spacing: 0.08em; transition: background 0.2s; }
+  #mindmap-app .footer-hint button:hover { background: rgba(79,200,212,0.2); }
 </style>
 
-<div class="app" id="app">
+<div id="mindmap-app">
   <canvas id="space"></canvas>
 
   <div class="content">
@@ -123,7 +123,7 @@ function openNode(i) {
   document.getElementById('mIcon').textContent = n.icon;
   document.getElementById('mTitle').textContent = n.title;
   document.getElementById('mSubtitle').textContent = n.subtitle;
-  document.getElementById('mBody').innerHTML = n.body + '<div style="margin-top:12px">' + n.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('') + '</div>';
+  document.getElementById('mBody').innerHTML = n.body + '<div style="margin-top:12px">' + n.tags.map(t=>`<span class="modal-tag">\${t}</span>`).join('') + '</div>';
   document.getElementById('modal').classList.add('open');
 }
 function openCenter() {
@@ -138,7 +138,7 @@ function openPermite() {
   document.getElementById('mTitle').textContent = 'Python permite...';
   document.getElementById('mSubtitle').textContent = 'Aplicaciones y casos de uso';
   let html = '<div class="permite-grid">';
-  permiteNodes.forEach((p,i) => { html += `<div class="permite-card" onclick="openPermiteDetail(${i})"><div class="p-icon">${p.icon}</div><div class="p-title">${p.title}</div></div>`; });
+  permiteNodes.forEach((p,i) => { html += `<div class="permite-card" onclick="openPermiteDetail(\${i})"><div class="p-icon">\${p.icon}</div><div class="p-title">\${p.title}</div></div>`; });
   html += '</div>';
   document.getElementById('mBody').innerHTML = html;
   document.getElementById('modal').classList.add('open');
@@ -148,7 +148,7 @@ function openPermiteDetail(i) {
   document.getElementById('mIcon').textContent = p.icon;
   document.getElementById('mTitle').textContent = p.title;
   document.getElementById('mSubtitle').textContent = 'Python permite · Explorar';
-  document.getElementById('mBody').innerHTML = p.body + '<div style="margin-top:12px">' + p.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('') + '</div><div style="margin-top:16px"><button onclick="openPermite()" style="background:rgba(79,200,212,0.1);border:0.5px solid #4fc8d4;color:#7de8f0;border-radius:16px;padding:5px 14px;font-size:11px;cursor:pointer;">← Volver</button></div>';
+  document.getElementById('mBody').innerHTML = p.body + '<div style="margin-top:12px">' + p.tags.map(t=>`<span class="modal-tag">\${t}</span>`).join('') + '</div><div style="margin-top:16px"><button onclick="openPermite()" style="background:rgba(79,200,212,0.1);border:0.5px solid #4fc8d4;color:#7de8f0;border-radius:16px;padding:5px 14px;font-size:11px;cursor:pointer;">← Volver</button></div>';
 }
 function closeModal() { document.getElementById('modal').classList.remove('open'); }
 document.getElementById('modal').addEventListener('click', function(e){ if(e.target===this) closeModal(); });
@@ -158,14 +158,14 @@ function drawLines() {
   const area = document.getElementById('diagram');
   const W = area.offsetWidth, H = area.offsetHeight;
   const cx = W/2, cy = H/2;
-  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  svg.setAttribute('viewBox',`0 0 \${W} \${H}`);
   const ids = ['n0','n1','n2','n3','n4','n5','n6','n7'];
   let lines = '';
   ids.forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     const nx = el.offsetLeft + 34, ny = el.offsetTop + 34;
-    lines += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="#2a5a7a" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>`;
+    lines += `<line x1="\${cx}" y1="\${cy}" x2="\${nx}" y2="\${ny}" stroke="#2a5a7a" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>`;
   });
   svg.innerHTML = lines;
 }
@@ -177,7 +177,7 @@ const ctx = canvas.getContext('2d');
 let W, H, stars = [], nebulae = [], shootingStars = [];
 
 function resize() {
-  const app = document.getElementById('app');
+  const app = document.getElementById('mindmap-app');
   W = canvas.width = app.offsetWidth;
   H = canvas.height = app.offsetHeight;
 }
@@ -228,7 +228,6 @@ let nextShooting = SHOOTING_INTERVAL;
 function drawFrame(ts) {
   ctx.clearRect(0, 0, W, H);
 
-  // deep space gradient background
   const bg = ctx.createLinearGradient(0, 0, W, H);
   bg.addColorStop(0,   '#080c1f');
   bg.addColorStop(0.4, '#0d1535');
@@ -237,89 +236,9 @@ function drawFrame(ts) {
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, W, H);
 
-  // nebulae
   nebulae.forEach(n => {
     const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, Math.max(n.rx, n.ry));
     g.addColorStop(0, n.color);
     g.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.save();
-    ctx.scale(n.rx / Math.max(n.rx,n.ry), n.ry / Math.max(n.rx,n.ry));
-    const sx = n.x / (n.rx / Math.max(n.rx,n.ry));
-    const sy = n.y / (n.ry / Math.max(n.rx,n.ry));
-    ctx.fillStyle = g;
-    ctx.beginPath();
-    ctx.arc(sx, sy, Math.max(n.rx,n.ry), 0, Math.PI*2);
-    ctx.fill();
-    ctx.restore();
-  });
-
-  // stars with twinkle
-  const t = ts * 0.001;
-  stars.forEach(s => {
-    const alpha = s.base + Math.sin(t * s.speed * 30 + s.phase) * 0.25;
-    ctx.beginPath();
-    ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
-    ctx.fillStyle = s.color;
-    ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-    ctx.fill();
-    ctx.globalAlpha = 1;
-  });
-
-  // shooting stars
-  if (ts - lastShooting > nextShooting) {
-    spawnShootingStar();
-    lastShooting = ts;
-    nextShooting = 5000 + Math.random() * 5000;
-  }
-
-  shootingStars = shootingStars.filter(ss => ss.alpha > 0.02);
-  shootingStars.forEach(ss => {
-    ss.trail.push({ x: ss.x, y: ss.y });
-    if (ss.trail.length > ss.maxTrail) ss.trail.shift();
-    ss.x += ss.vx;
-    ss.y += ss.vy;
-    ss.alpha -= 0.018;
-
-    if (ss.trail.length > 1) {
-      for (let i = 1; i < ss.trail.length; i++) {
-        const prog = i / ss.trail.length;
-        const grad = ctx.createLinearGradient(
-          ss.trail[i-1].x, ss.trail[i-1].y,
-          ss.trail[i].x, ss.trail[i].y
-        );
-        grad.addColorStop(0, `rgba(180,235,255,0)`);
-        grad.addColorStop(1, `rgba(200,245,255,${ss.alpha * prog * 0.9})`);
-        ctx.beginPath();
-        ctx.moveTo(ss.trail[i-1].x, ss.trail[i-1].y);
-        ctx.lineTo(ss.trail[i].x, ss.trail[i].y);
-        ctx.strokeStyle = grad;
-        ctx.lineWidth = 1.5 * prog;
-        ctx.lineCap = 'round';
-        ctx.stroke();
-      }
-      // bright head
-      ctx.beginPath();
-      ctx.arc(ss.x, ss.y, 1.8, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(220,248,255,${ss.alpha})`;
-      ctx.fill();
-      // glow
-      const glow = ctx.createRadialGradient(ss.x, ss.y, 0, ss.x, ss.y, 8);
-      glow.addColorStop(0, `rgba(150,220,255,${ss.alpha * 0.5})`);
-      glow.addColorStop(1, 'rgba(0,0,0,0)');
-      ctx.beginPath();
-      ctx.arc(ss.x, ss.y, 8, 0, Math.PI*2);
-      ctx.fillStyle = glow;
-      ctx.fill();
-    }
-  });
-
-  requestAnimationFrame(drawFrame);
-}
-
-resize();
-initStars();
-initNebulae();
-window.addEventListener('resize', () => { resize(); initStars(); initNebulae(); drawLines(); });
-requestAnimationFrame(drawFrame);
-setTimeout(drawLines, 120);
-</script>
+    ctx.scale(n.rx / Math.max(n.rx,n.ry
