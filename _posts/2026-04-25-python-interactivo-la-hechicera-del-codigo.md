@@ -4,20 +4,16 @@ title: "¿Qué es PYTHON?"
 ---
 
 Aprende Python desde cero...
-
+{% raw %}
 <style>
   /* Pega aquí todo el código que te pasé antes */
 </style>
 
 <div id="mindmap-app">
   </div>
-
-{% raw %}
 <script>
   /* Todo el JavaScript */
 </script>
-
-
 <style>
   /* Reseteo encapsulado solo para este componente */
   #mindmap-app, #mindmap-app * { box-sizing: border-box; margin: 0; padding: 0; }
