@@ -18,9 +18,7 @@ Aprende Python desde cero...
   /* Todo el JavaScript */
 </script>
 
-{% endraw %}
 
-{% endraw %}
 <style>
   /* Reseteo encapsulado solo para este componente */
   #mindmap-app, #mindmap-app * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -62,6 +60,7 @@ Aprende Python desde cero...
   #mindmap-app .footer-hint button:hover { background: rgba(79,200,212,0.2); }
 </style>
 
+{% endraw %}
 <div id="mindmap-app">
   <canvas id="space"></canvas>
 
