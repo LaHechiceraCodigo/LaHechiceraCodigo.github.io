@@ -5,7 +5,6 @@ title: "¿Qué es PYTHON?"
 
 Aprende Python desde cero...
 
-{% raw %}
 <style>
   /* Pega aquí todo el código que te pasé antes */
 </style>
@@ -59,7 +58,6 @@ Aprende Python desde cero...
   #mindmap-app .footer-hint button { margin-top: 10px; background: rgba(79,200,212,0.1); border: 1px solid #4fc8d4; color: #7de8f0; border-radius: 20px; padding: 7px 20px; font-size: 11px; cursor: pointer; letter-spacing: 0.08em; transition: background 0.2s; }
   #mindmap-app .footer-hint button:hover { background: rgba(79,200,212,0.2); }
 </style>
-
 {% endraw %}
 <div id="mindmap-app">
   <canvas id="space"></canvas>
