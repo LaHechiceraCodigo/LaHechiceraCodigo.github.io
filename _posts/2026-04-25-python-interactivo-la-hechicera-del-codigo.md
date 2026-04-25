@@ -3,7 +3,7 @@ layout: post
 title: "¿Qué es PYTHON?"
 ---
 
-Aquí va tu texto normal...
+Aprende Python desde cero...
 
 {% raw %}
 <style>
