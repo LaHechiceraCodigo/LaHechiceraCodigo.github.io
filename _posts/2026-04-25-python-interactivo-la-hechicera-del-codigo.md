@@ -215,7 +215,7 @@ Son contenedores donde guardas datos: números, textos o listas de ingredientes.
 
 Python
 poder_magico = 100
-nombre_hechicera = "Isela"
+nombre_hechicera = "Agatha"
 elementos = ["Fuego", "Datos", "Código"]
 II. Los Bucles (Encantamientos de Repetición)
 ¿Necesitas procesar 1,000 filas de un Excel? No lo hagas a mano, usa un bucle for. Es como darle una orden a un ejército de sombras para que trabajen por ti.
